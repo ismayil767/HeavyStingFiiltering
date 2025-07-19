@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "HeavyStringFiltering\\HeavyStringFiltering.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FilteringBackgroundService\\FilteringBackgroundService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
