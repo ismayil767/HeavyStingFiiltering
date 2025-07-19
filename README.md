@@ -15,7 +15,7 @@ This repository implements a system for filtering large text files by splitting 
 ## Technology Stack
 
 *   **C#:** Primary programming language.
-*   **.NET 7:** Target framework.
+*   **.NET 8:** Target framework.
 *   **ASP.NET Core:** Web API framework.
 *   **MediatR:** In-process messaging library for handling commands and queries.
 *   **FluentValidation:** Validation library for data input validation.
@@ -27,7 +27,7 @@ This repository implements a system for filtering large text files by splitting 
 
 ## Prerequisites
 
-*   .NET 7 SDK installed.
+*   .NET 8 SDK installed.
 *   An IDE or text editor for code modification (e.g., Visual Studio, VS Code, Rider).
 *   (Optional) Prometheus and Grafana for monitoring.
 
@@ -169,7 +169,3 @@ Uploads a chunk of text data.
 ## License Information
 
 No license has been specified for this project.  All rights are reserved by the author.
-
-## Contact/Support Information
-
-For questions or support, please contact ismayil767@example.com (replace with the actual contact information).
