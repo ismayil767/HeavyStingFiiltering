@@ -2,6 +2,8 @@
 using HeavyStringFiltering.Application.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
 namespace HeavyStringFiltering.Application.Commands.UploadChunk
 {
@@ -32,6 +34,11 @@ namespace HeavyStringFiltering.Application.Commands.UploadChunk
                 {
                     if (_chunkStorage.TryAssemble(request.UploadId, out var fullText))
                     {
+                        if (Encoding.UTF8.GetByteCount(fullText) > 100 * 1024 * 1024) // 100 MB
+                        {
+                            throw new ValidationException("Total upload exceeds 100MB limit.");
+                        }
+
                         await _queueService.EnqueueAsync(request.UploadId, fullText);
                         _logger.LogInformation("Final chunk received. Full string assembled and enqueued. UploadId: {UploadId}", request.UploadId);
                         _chunkStorage.Clear(request.UploadId);
