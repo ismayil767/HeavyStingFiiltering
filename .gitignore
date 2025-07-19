@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/HeavyStringFiltering/bin/Debug/net8.0
+/HeavyStringFiltering/obj
+/HeavyStringFiltering/Properties
+/HeavyStringFiltering.Application/obj
+/HeavyStringFiltering.Application.Test/bin/Debug/net8.0
+/HeavyStringFiltering.Application.Test/obj
+/HeavyStringFiltering.Domain/bin/Debug/net8.0
+/HeavyStringFiltering.Domain/obj
+/HeavyStringFiltering.Infrastructure/bin/Debug/net8.0
+/HeavyStringFiltering.Infrastructure/obj
+/HeavyStringFiltering.Infrastructure.Test/bin/Debug/net8.0
+/HeavyStringFiltering.Infrastructure.Test/obj
+/HeavyStringFiltering.Application/bin/Debug/net8.0
